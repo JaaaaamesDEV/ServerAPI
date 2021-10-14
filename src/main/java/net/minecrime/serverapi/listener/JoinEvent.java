@@ -16,6 +16,14 @@ public class JoinEvent implements Listener {
         if(player.isOp()) { //method if player with operator joins the server a message send to the operator
             player.sendMessage(DataManager.pr + "§aWelcome Operator!");
             player.sendMessage(DataManager.pr + "§eYou seeing this message because of having operator-rights");
+
+            /*
+            news-system should be actual.
+            implement new message if sth. is new.
+             */
+
+            player.sendMessage(DataManager.pr + "§f§lNews:"); //news-system for player with operator-rights
+            player.sendMessage(DataManager.pr + "§f- We got updated our bansystem! Try it out with /ban");
         }
 
     }
